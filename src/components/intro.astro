@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Powerful and fast" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="h-32" />
+  <Fragment slot="lead">
+    Fava empower your
+    <span class="text-primary">financial decisions</span> with
+    <span class="text-primary">AI-driven insights</span>.
+     Unlock financial <span class="text-primary">clarity</span>
+    for better financial journey.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="chat" class="h-8" />
+      <span>Chat with Fava</span>
+    </a>
+    <a
+      href="https://astro.new/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="computer" class="h-8" />
+      <span>AI Dashboard</span>
+    </a>
+  </div>
+</ContentSection>
